@@ -210,12 +210,20 @@ li[style] {
 }
 
 .tbl {
-    border: 1px solid rgb(52, 91, 131);
-    border-collapse: collapse;
-    color: chocolate;
-    text-align: center;
     width: 100%;
+}
+
+.tbl th,
+td {
+    border: 1px solid #80ced6;
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
     margin-top: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 @media only screen and (max-width:800px) {
