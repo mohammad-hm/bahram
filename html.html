@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>mcshop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div>
+        <ul class="list">
+            <li class="li"><a href="#"> خانه </a></li>
+            <li class="li"><a href="#"> فروش </a></li>
+            <li class="li"><a href="#"> خدمات </a></li>
+            <li class="li" style=" float: left;"><a style="cursor: pointer;" onclick="myfunction()"><i  class=" 	glyphicon glyphicon-align-justify"></a></i>
+        </ul>
+    </div>
+    <div class="main" style="margin: 60px 0px;">
+        <div>
+            <div id="side" class="sidenav sidnavwidht">
+                <button class="tablinks" onclick="openCity(event, 'search')">جستجوی پیشرفته</button>
+                <button class="tablinks" onclick="openCity(event, 'services')">لیست خدمات</button>
+                <button href="#clients">خدمات</button>
+                <button href="#contact">محصولات</button>
+                <button class="dropdown-btn">لیست مشتریان
+                  <i  style="float: left; top:10px; background-color: #d5f4e6;" class="glyphicon glyphicon-plus"></i>
+                </button>
+                <div class="dropdown-container">
+                    <button href="#"> مشتریان خانگی </button>
+                    <button href="#">مشتریان سازمانی</button>
+                    <button href="#">مشتریان گوشی هوشمند</button>
+                </div>
+                <button href="#contact">درباره ما</button>
+            </div>
+        </div>
+        <div class="section">
+            <div id="search" class="tabcontent" id="header">
+                <form action="#" class="form1">
+                    <div><label for="cust">نام مشتری:</label> <input id="cust" type="text" placeholder=" آقای اکبری"></div>
+                    <div><label for="orga">نام سازمان:</label> <input id="orga" type="text" placeholder="وزارت نیرو"></div>
+                    <div><label for="phone">شماره تلفن:</label> <input id="phone" type="text" placeholder="09125503251 " pattern="[0-9]"></div>
+                    <div><label for="address">آدرس:</label> <input id="address" type="text" placeholder="ونک - ملاصدرا - گرمسار  "></div>
+                    <div><label for="email">آدرس ایمیل:</label> <input id="email" type="email" placeholder=".....@ "></div>
+                    <div><label for="code">شماره ملی:</label> <input id="code" type="text" placeholder="0014913552 " pattern="[0-9]{10}"></div>
+                    <div><label for="license">لایسنس:</label> <input id="license" type="text" placeholder="********* " pattern="[0-9]"></div>
+                    <div> <label for="datemin">تاریخ خرید:</label> <input type="date" id="datemin" placeholder="انتخواب کنید" name="datemin" min="2000-01-02"></div>
+                    <div id="subdiv"><input id="sub" type="submit" value="  جستجو"></div>
+                </form>
+            </div>
+            </br>
+
+
+            <div style="display: none;" id="services" class="tabcontent">
+                <table class="tbl">
+                    <tr class="tbl">
+                        <th class="tbl"> شماره </th>
+                        <th class="tbl"> نام مشتری </th>
+                        <th class="tbl"> شماره تماس </th>
+                        <th class="tbl"> شهر </th>
+                    </tr class="tbl">
+                    <tr>
+                        <td class="tbl">1 </td>
+                        <td class="tbl"> وزارت آموزش و پرورش </td>
+                        <td class="tbl"> 091255846528 </td>
+                        <td class="tbl"> تهران </td>
+                    </tr>
+                    <tr class="tbl">
+                        <td class="tbl"> 2 </td>
+                        <td class="tbl"> وزارت نیرو </td>
+                        <td class="tbl"> 02155321585 </td>
+                        <td class="tbl"> بوشهر </td>
+                    </tr>
+                    <tr class="tbl">
+                        <td class="tbl"> 3 </td>
+                        <td class="tbl"> بانک صادرات </td>
+                        <td class="tbl"> 09214581524 </td>
+                        <td class="tbl"> مازندران </td>
+                    </tr>
+                    <tr class="tbl">
+                        <td class="tbl"> 4 </td>
+                        <td class="tbl">بانک سپه </td>
+                        <td class="tbl"> 09135485214 </td>
+                        <td class="tbl"> یزد </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js.js" async defer></script>
+</body>
+
+</html>

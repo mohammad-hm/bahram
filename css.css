@@ -1,0 +1,257 @@
+@font-face {
+    font-family: yekan;
+    src: url("yekan.woff") format('woff');
+    font-weight: normal;
+}
+
+* {
+    font-family: yekan;
+    font-family: 'Ubuntu Condensed', ;
+    font-size: 1vw;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #f5f2ea;
+}
+
+.list {
+    list-style-type: none;
+    background-color: #618685;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    color: #f1f1f1;
+    width: 100%;
+    margin-top: 3px;
+    height: 50px;
+    z-index: 100;
+}
+
+.li {
+    float: right;
+    margin-right: 5px;
+    background-color: transparent;
+    height: 100%;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: #CFD8DC;
+    padding: 10px 16px;
+    background-color: transparent;
+    height: 100%;
+}
+
+li a:hover {
+    background-color: #80ced6;
+    color: #262626;
+}
+
+li i {
+    margin: 5px;
+    background-color: #009688;
+}
+
+li[style] {
+    display: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 85%;
+    padding: 5px;
+    border: 1px solid #f4e1d2;
+}
+
+#header {
+    text-align: center;
+    border: 1px solid gray;
+    width: 100%;
+    height: 500px;
+    direction: rtl;
+}
+
+.form1 {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    align-items: inherit;
+}
+
+.form1 label {
+    margin: 20px 2px 20px 3px;
+}
+
+.form1 input {
+    margin: 20px 2px 20px 3px;
+}
+
+.form1 div {
+    direction: rtl;
+    margin: 10px;
+    width: 250px;
+    display: flex;
+}
+
+.form1 input:focus {
+    border: 1px solid #618685;
+    background-color: #80ced6;
+}
+
+#subdiv {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.form1 div input[type="submit"] {
+    background-color: #80ced6;
+    padding: 5px;
+    margin: auto;
+}
+
+
+/* Fixed sidenav, full height */
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    background-color: #d5f4e6;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 1px solid #80ced6;
+}
+
+.sidnavwidht {
+    width: 15%;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+
+.sidenav button,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    direction: rtl;
+    text-align: right;
+}
+
+
+/* On mouse-over */
+
+.sidenav button:hover,
+.dropdown-btn:hover {
+    color: #262626;
+    background-color: #fefbd8;
+}
+
+
+/* Main content */
+
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+
+/* Add an active class to the active dropdown button */
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    background-color: #fefbd8;
+    padding-left: 8px;
+}
+
+.dropdown-container:hover {
+    background-color: #f4e1d2;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.tbl {
+    border: 1px solid rgb(52, 91, 131);
+    border-collapse: collapse;
+    color: chocolate;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:800px) {
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    #header {
+        height: 100%;
+    }
+    .form1 input {
+        width: 70%;
+        margin: 5px 5%;
+    }
+    .form1 div {
+        width: 90%;
+        margin: 10px 10%;
+    }
+    .form1 label {
+        margin: 5px 5%;
+        display: inline-block;
+        width: 10%;
+    }
+    #subdiv {
+        width: 90%;
+        margin: 10px 10%;
+    }
+    .sidnavwidht {
+        width: 0px;
+    }
+    .section {
+        width: 100%;
+    }
+    li[style] {
+        display: inline;
+    }
+}
